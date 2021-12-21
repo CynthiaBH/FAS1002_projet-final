@@ -1,13 +1,15 @@
 ---
 title: "Titre de votre projet final"
-description: |
-  Ceci est votre page d'accueil de votre site web
+description:
+  Accueil
 site: distill::distill_website
 toc: false
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(readxl)
 ```
 
 Vous pouvez faire le résumé de votre projet directement sur cette page et utiliser le document [1-intro](1-intro.html) pour décrire votre projet.
@@ -32,9 +34,7 @@ pie(
 Quand même très cool, non? Vous pouvez mettre des annotations sur le côté! 
 </aside>
 
-### Toujours très important de mettre les bons niveaux de titres
 
-Un peu de texte de remplissage pour faire comme si la page était plus longue. *Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.*
 
 ## Remerciements {.appendix}
 

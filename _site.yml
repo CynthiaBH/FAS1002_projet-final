@@ -1,10 +1,8 @@
 name: "FAS1002_projet-final"
 title: "FAS1002 - Projet final"
 favicon: static/images/FAS1002.png
-# N'oubliez pas d'activer votre site web dans vos params sur GH.
-repository_url: https://github.com/FAS1002/FAS1002_projet-final
-description: |
-  Projet final pour le cours FAS1002! 🔥
+repository_url: https://cynthiabh.github.io/fas1002_projet-final/
+description: Projet final pour le cours FAS1002! 
 output_dir: "docs"
 theme: static/theme.css
 navbar:
@@ -14,7 +12,7 @@ navbar:
   source_url: true
   left:
   # Vous pouvez supprimer ou changer les pages
-    - text: "Aide pour le site"
+    - text: "Guides Pratiques"
       menu:
         - text: "Distill Basics"
           href: https://rstudio.github.io/distill/basics.html

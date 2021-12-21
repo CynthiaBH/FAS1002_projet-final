@@ -1,5 +1,4 @@
 ---
-# Vous pouvez vous servir de cette page pour parler de vous.
 title: "À propos"
 description: |
     Lisez ci-dessous pour en apprendre plus sur la personne derrière ce rapport.
@@ -24,10 +23,10 @@ Le [cours FAS1002](https://admission.umontreal.ca/cours-et-horaires/cours/fas-10
 
 ## Contact
 
-**Programme** | [Microprogramme en analyse des mégadonnées en sciences humaines et sociales](https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-analyse-des-megadonnees-en-sciences-humaines-et-sociales/structure-du-programme/)
+**Programme** | [Baccalauréat en Anthropologie](https://anthropo.umontreal.ca/programmes-cours/programmes-de-1er-cycle/baccalaureat-en-anthropologie/)
 
 **Université** | [Université de Montréal](https://umontreal.ca)
 
-**Courriel** | fas1002@samuelguay.ca
+**Courriel** | cynthia.bello-hernandez@umontreal.ca
 
 
