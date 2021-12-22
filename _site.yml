@@ -16,21 +16,8 @@ navbar:
       menu:
         - text: "Distill Basics"
           href: https://rstudio.github.io/distill/basics.html
-        - text: "Figure Layout"
-          href: https://rstudio.github.io/distill/figures.html
-        - text: "Tables"
-          href: https://rstudio.github.io/distill/tables.html
-        - text: "Diagrams"
-          href: https://rstudio.github.io/distill/diagrams.html
-        - text: "JavaScript & D3"
-          href: https://rstudio.github.io/distill/interactivity.html
-        - text: "---"
-        - text: "Citations"
-          href: https://rstudio.github.io/distill/citations.html
-        - text: "Article Metadata"
-          href: https://rstudio.github.io/distill/metadata.html
+
   right:
-  # L'ordre et les noms == arbitraires, usez de créativité.
     - text: "Introduction"
       href: 1-intro.html
     - text: "Importation"
@@ -43,8 +30,8 @@ navbar:
       href: contact.html
 
       # voir https://fontawesome.com/v4.7/icons/ pour les icones
-    - icon: fab fa-twitter
-      href: https://twitter.com/VOTREUSERNAME
+    - icon: fab fa-envelope-square
+      href: cynthia.bello-hernandez@umontreal.ca 
 creative_commons: CC BY
 
 output:

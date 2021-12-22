@@ -19,9 +19,10 @@ html {
   /*-- Main font sizes --*/
   --title-size:      50px;
   --body-size:       1.06rem;
-  --code-size:       14px;
+  --code-size:       12px;
   --aside-size:      12px;
   --fig-cap-size:    13px;
+  --line-height:     0.5rem;
   /*-- Main font colors --*/
   --title-color:     #000000;
   --header-color:    rgba(0, 0, 0, 0.8);
@@ -46,14 +47,14 @@ d-byline {
 /*-- ARTICLE TABLE OF CONTENTS --*/
 .d-contents {
   --heading-size:    18px;
-  --contents-size:   13px;
+  --contents-size:   15px;
 }
 
 /*-- ARTICLE APPENDIX --*/
 d-appendix {
   --heading-size:    15px;
   --heading-color:   rgba(0, 0, 0, 0.65);
-  --text-size:       0.8em;
+  --text-size:       0.7em;
   --text-color:      rgba(0, 0, 0, 0.5);
 }
 
@@ -79,8 +80,13 @@ d-appendix {
 
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
-/*  Ligne 81 à 97 = le dégradé de couleur, simplement supprimer
-au besoin */
+
+.d- p {
+  --line-height:    1.45;
+  --text-size:      2.0rem;
+}
+
+
 .distill-site-footer {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;

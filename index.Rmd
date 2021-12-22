@@ -1,5 +1,5 @@
 ---
-title: "Titre de votre projet final"
+title: "Rapport final: Étude des données de vaccinations de la Covid-19"
 description:
   Accueil
 site: distill::distill_website
@@ -18,17 +18,6 @@ Il s'agit d'un fichier R Markdown traditionnel. ^[Avec des petits trucs sympa co
 
 ## Inclure des graphiques
 
-Comme la classique pyramide à la Figure \@ref(fig:pie) par exemple:
-
-```{r pie, fig.cap='Une très belle tarte', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Ciel', 'Côté ensoleillé de la pyramide', 'Côté ombragé de la pyramide'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
-```
 
 <aside>
 Quand même très cool, non? Vous pouvez mettre des annotations sur le côté! 
@@ -38,4 +27,4 @@ Quand même très cool, non? Vous pouvez mettre des annotations sur le côté!
 
 ## Remerciements {.appendix}
 
-J'aimerais remercier toutes les étudiantes et tous les étudiants du cours FAS1002 de l'automne 2021 pour leur enthousiasme, leur ouverture et leur rétroaction envers le cours!
+
