@@ -1,15 +1,14 @@
 ---
-title: "Exploration des données "
+title: "Analyse des données "
 description:
-  Petite description du contenu de cette page
+    Courte analyse et visualisation des données de vaccinations, PIB et espérance de vie.
 date: "`r Sys.Date()`"
-# Modifier les détails que vous voulez
 author:
   - first_name: "Cynthia"
     last_name: "Bello"
     url: https://github.com/CynthiaBH
-    affiliation: FAS1002
-    # affiliation_url: 
+    affiliation: Université de Montréal
+    affiliation_url: https://www.umontreal.ca/etudes/#domaines-d-etudes
 citation_url: https://CynthiaBH.github.io/FAS1002_projet-final
 bibliography: references.bib
 output: distill::distill_article

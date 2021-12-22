@@ -8,15 +8,9 @@ author:
   - first_name: "Cynthia"
     last_name: "Bello"
     url: https://github.com/CynthiaBH
-    affiliation: FAS1002
-    #affiliation_url:
-# Changer pour votre propre URL si jamais quelqu'un vous cite!
+    affiliation:  Université de Montréal
+    affiliation_url: https://www.umontreal.ca/etudes/#domaines-d-etudes
 citation_url: https://CynthiaBH.github.io/FAS1002_projet-final
-# Inclure les références que vous utilisez dans vos rapports
-# dans un fichier biblio.bib. Je conseille Zotero pour construire
-# ce fichier ou d'utiliser le package citr dans RStudio.
-# Installation: devtools::install_github("crsh/citr")
-bibliography: references.bib
 output: distill::distill_article
 ---
 

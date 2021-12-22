@@ -1,9 +1,8 @@
 ---
-title: "Rapport final: Étude des données de vaccinations de la Covid-19"
-description:
-  Accueil
+title: 'Rapport final: Étude des données de vaccinations de la Covid-19'
+description: Accueil
 site: distill::distill_website
-toc: false
+toc: no
 ---
 
 ```{r setup, include=FALSE}

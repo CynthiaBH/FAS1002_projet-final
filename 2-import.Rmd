@@ -7,8 +7,8 @@ author:
   - first_name: "Cynthia"
     last_name: "Bello"
     url: https://github.com/CynthiaBH
-    affiliation: FAS1002
-    # affiliation_url: 
+    affiliation:  Université de Montréal
+    affiliation_url: https://www.umontreal.ca/etudes/#domaines-d-etudes
 citation_url: https://CynthiaBH.github.io/FAS1002_projet-final
 bibliography: references.bib
 
@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-# Importation des données
+# Données à l'étude
 
 ## Données de vaccinations Covid-19
 
@@ -51,11 +51,14 @@ show_tb_paged(covid_data)
 
 | Les données relatives au PIB ainsi que celles de l'espérance de vie dans la prochaine section sont tirées de [Gapminder](https://www.gapminder.org) - un organisme suédois qui a pour but d'éliminer les fausses idées et promouvoir une vision du monde fondée sur des faits. Le produit intérieur brut (PIB) est ici présenté depuis l'année 1800 jusqu'à 2050 - déduit par estimation basée sur les années précédentes, ainsi que par pays, région ou pour le monde entier. Nous nous concentrerons sur les données par pays de la feuille `data-for-countries-etc-by-year`. Les données complètes sur le PIB sont disponibles [ici](https://www.gapminder.org/data/documentation/gd001/) [@gapminder_gdp_nodate], par contre pour les besoins de nos analyses nous nous concentrerons sur les 5 dernières années seulement par pays. 
 
+.pull-left{
 ```{r}
 pib_data %<>% filter(year > 2015, year <=2021)
 show_tb_dt(pib_data, "Données du PIB de 2016-2021 pour chaque pays")
 ```
+}
 
+.pull-right{
 [Description des différentes variables:]{.ul}
 
 -   `geo`: Abréviation du nom du pays
@@ -63,6 +66,8 @@ show_tb_dt(pib_data, "Données du PIB de 2016-2021 pour chaque pays")
 -   `year`: année correspondante au PIB
 -   `income_per_person`: produit intérieur brut par personne
 -   `gdp_total`: produit intérieur brut total
+}
+
 
 ## Données sur l'espérance de vie
 
@@ -81,7 +86,7 @@ show_tb_dt(lifeexp_data, "Données de l'espérance de vie pour 2016-2021 pour ch
 -   `year`: année correspondante à l'espérance de vie
 -   `life_expectancy` : espérance de vie moyenne d'un nouveau-né pour l'année en question si les conditions de vie restaient les mêmes au cours de sa vie
 
-## Nettoyage des données
+# Nettoyage des données
 
 Nous avons procédé à un premier nettoyage des variables et des observations:
 
