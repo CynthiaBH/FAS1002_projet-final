@@ -6,6 +6,7 @@ library(magrittr)
 url_covid <- "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv"
 url_pib <- "https://docs.google.com/spreadsheets/d/1h3z8u0ykcUum8P9FV8EHF9fszDYr7iPDZQ-fgE3ecls/export?format=xlsx"
 url_lifeexp <- "https://docs.google.com/spreadsheets/d/11mulzUH3_cueq-V9D5KIlo9oHE9YYZrUSeVyCin7_rM/export?format=xlsx"
+
 folder <- "data/raw/"
 sheetcountry <- "data-for-countries-etc-by-year"
 sheetregion <- "data-for-regions-by-year"

@@ -1,6 +1,6 @@
 ---
-title: 'Rapport final: Étude des données de vaccinations de la Covid-19'
-description: Accueil
+title: 'Rapport final pour le cours FAS 1002'
+description: Étude des données de vaccinations de la Covid-19
 site: distill::distill_website
 toc: no
 ---
@@ -19,11 +19,10 @@ Il s'agit d'un fichier R Markdown traditionnel. ^[Avec des petits trucs sympa co
 
 
 <aside>
-Quand même très cool, non? Vous pouvez mettre des annotations sur le côté! 
 </aside>
 
 
 
 ## Remerciements {.appendix}
-
+J'aimerai rem
 

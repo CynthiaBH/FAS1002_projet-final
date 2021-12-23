@@ -1,21 +1,20 @@
 name: "FAS1002_projet-final"
-title: "FAS1002 - Projet final"
-favicon: static/images/FAS1002.png
+title: "Projet d'étude: Covid-19"
 repository_url: https://cynthiabh.github.io/fas1002_projet-final/
 description: Projet final pour le cours FAS1002! 
 output_dir: "docs"
 theme: static/theme.css
 navbar:
-  logo:
-    image: static/images/FAS1002.png
-    href: index.html
   source_url: true
   left:
-  # Vous pouvez supprimer ou changer les pages
+    - icon: fab fa-graduation-cap
+      href: index.html
     - text: "Guides Pratiques"
       menu:
         - text: "Distill Basics"
           href: https://rstudio.github.io/distill/basics.html
+        - text: "DT Basics"
+          href: https://rstudio.github.io/DT/
 
   right:
     - text: "Introduction"
@@ -26,10 +25,8 @@ navbar:
       href: 3-transform.html
     - text: "Analyse"
       href: 4-analyse.html
-    - text: "Contact"
+    - icon: fab fa-address-card-o
       href: contact.html
-
-      # voir https://fontawesome.com/v4.7/icons/ pour les icones
     - icon: fab fa-github
       href: https://cynthiabh.github.io/fas1002_projet-final/
 creative_commons: CC BY
@@ -37,6 +34,6 @@ creative_commons: CC BY
 output:
   distill::distill_article:
     code_folding: true
-    highlight: default
+    highlight: tango
     toc: true
     toc_float: true

@@ -27,9 +27,6 @@ show_tb_dt<- function(dt, title){
               class = 'cell-border stripe'
               )
 }
-# 
-# show_tb_dt <- function(dt){
-#     datatable(dt, class = 'cell-border stripe', filter = 'top', editable = TRUE)
-# }
+
 
 

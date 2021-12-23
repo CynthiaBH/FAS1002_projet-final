@@ -18,3 +18,16 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Dans cette section, nous allons manipuler nos différents jeux de données présentés précédemment dans le but de rendre plus efficace l'analyse ou de mieux
+
+# Variable **`date`** de l'ensemble de données de vaccinations
+
+La colonne `date` des données de vaccinations de la Covid-19 est divisée en jours depuis Décembre 2020, cela résulte en plus de 300 observations pour chaque pays. Pour une meilleure visualisation des données, on a décidé de regrouper cette variable par mois et année en utilisant le *package* **Zoo**.
+
+```{r}
+covid_data %<>% mutate(date = zoo::as.yearmon(date))
+show_tb_dt(covid_data, "Données de vaccinations de la Covid-19 - par mois/année")
+
+```
+
+# Nouvelle variable `continents` pour les 3 ensembles de données

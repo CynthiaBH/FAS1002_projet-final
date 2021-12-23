@@ -1,9 +1,8 @@
 # Script R qui contient les fonctions de nettoyage des colonnes
-
+library(lubridate)
 # Colonnes des données Covid-19
-covid_data %<>% select(-c(8,9,15)) %>% mutate(date = ymd(date)) %>% 
-    relocate(date, .after = 2)%>% 
-    rename(country = location)
+covid_data %<>% select(-c(8,9,15)) %>% rename(country = location) 
+covid_data$date <- as.Date(covid_data$date, "%Y-%m-%d")
 covid_data$country <- as.factor(covid_data$country)
 
 # Colonnes des données PIB
