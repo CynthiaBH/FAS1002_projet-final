@@ -7,7 +7,7 @@ theme: static/theme.css
 navbar:
   source_url: true
   left:
-    - icon: fab fa-graduation-cap
+    - icon: fab fa-line-chart
       href: index.html
     - text: "Guides Pratiques"
       menu:
@@ -22,10 +22,10 @@ navbar:
     - text: "Importation"
       href: 2-import.html
     - text: "Transformation"
-      href: 3-transform.html
+      href: 3-transformation.html
     - text: "Analyse"
       href: 4-analyse.html
-    - icon: fab fa-address-card-o
+    - icon: fab fa-id-card-o
       href: contact.html
     - icon: fab fa-github
       href: https://cynthiabh.github.io/fas1002_projet-final/
@@ -33,7 +33,9 @@ creative_commons: CC BY
 
 output:
   distill::distill_article:
+    css: static/theme.css
     code_folding: true
     highlight: tango
     toc: true
     toc_float: true
+    toc_title: "Contenu"
