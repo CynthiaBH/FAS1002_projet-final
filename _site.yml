@@ -7,7 +7,7 @@ theme: static/theme.css
 navbar:
   source_url: true
   left:
-    - icon: fab fa-line-chart
+    - icon: fa fa-line-chart
       href: index.html
     - text: "Guides Pratiques"
       menu:
@@ -25,7 +25,8 @@ navbar:
       href: 3-transformation.html
     - text: "Analyse"
       href: 4-analyse.html
-    - icon: fab fa-id-card-o
+    - icon: fab fa-envelope
+      text: "Contact"
       href: contact.html
     - icon: fab fa-github
       href: https://cynthiabh.github.io/fas1002_projet-final/
@@ -38,4 +39,3 @@ output:
     highlight: tango
     toc: true
     toc_float: true
-    toc_title: "Contenu"

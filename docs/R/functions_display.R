@@ -18,12 +18,13 @@ show_tb_paged <- function(dt){
 }
 
 show_tb_dt<- function(dt, title){
-    datatable(dt, extensions = c('FixedColumns',"FixedHeader"),
+    datatable(dt,
+              caption = htmltools::tags$caption(title, style="color:darkgrey"), 
+              extensions = c('FixedColumns',"FixedHeader"),
               rownames = FALSE,
-                  options = list(scrollX = TRUE, 
+              options = list(scrollX = TRUE, 
                                  paging=TRUE,
-                                 fixedHeader=FALSE),
-              caption = title, 
+                                 fixedHeader=TRUE),
               class = 'cell-border stripe'
               )
 }
