@@ -50,7 +50,7 @@ show_tb_paged(covid_data)
 
 ## Données relatives au PIB
 
-| Les données relatives au PIB ainsi que celles de l'espérance de vie dans la prochaine section sont tirées de [Gapminder](https://www.gapminder.org) - un organisme suédois qui a pour but d'éliminer les fausses idées et promouvoir une vision du monde fondée sur des faits. Le produit intérieur brut (PIB) est ici présenté depuis l'année 1800 jusqu'à 2050 - déduit par estimation basée sur les années précédentes, ainsi que par pays, région ou pour le monde entier. Nous nous concentrerons sur les données par pays de la feuille `data-for-countries-etc-by-year`. Les données complètes sur le PIB sont disponibles [ici](https://www.gapminder.org/data/documentation/gd001/) [@gapminder_gdp_nodate], par contre pour les besoins de nos analyses nous nous concentrerons sur les 5 dernières années seulement par pays.
+| Les données relatives au PIB ainsi que celles de l'espérance de vie dans la prochaine section sont tirées de [Gapminder](https://www.gapminder.org) - un organisme suédois qui a pour but d'éliminer les fausses idées et promouvoir une vision du monde fondée sur des faits. Le produit intérieur brut (PIB) est ici présenté depuis l'année 1800 jusqu'à 2050 - déduit par estimation basée sur les années précédentes, ainsi que par pays, région ou pour le monde entier. Nous nous concentrerons sur les données par pays de la feuille `data-for-countries-etc-by-year`. Les données complètes sur le PIB sont disponibles [ici](https://www.gapminder.org/data/documentation/gd001/) [@gapminder2021], par contre pour les besoins de nos analyses nous nous concentrerons sur les 5 dernières années seulement par pays.
 
 #### Données du PIB de 2016-2021 pour chaque pays {style="text-align:center; color:#955BCC"}
 
@@ -69,7 +69,7 @@ show_tb_dt(pib_data)
 
 ## Données sur l'espérance de vie
 
-Les données sur l'espérance de vie que nous utiliserons sont disponibles [Gapminder](https://www.gapminder.org/data/documentation/gd004/) [@gapminder] , et elles sont également présentées depuis l'année 1800, puis elles s'étendent jusqu'en 2100. Le fichier contient différentes feuilles par pays, par régions ou pour le monde, nous utiliserons la feuille `data-for-countries-etc-by-year` pour nos analyses, ainsi que les données pour les cinq dernières années seulement.
+Les données sur l'espérance de vie que nous utiliserons sont disponibles [Gapminder](https://www.gapminder.org/data/documentation/gd004/) [@gapminder2021] , et elles sont également présentées depuis l'année 1800, puis elles s'étendent jusqu'en 2100. Le fichier contient différentes feuilles par pays, par régions ou pour le monde, nous utiliserons la feuille `data-for-countries-etc-by-year` pour nos analyses, ainsi que les données pour les cinq dernières années seulement.
 
 ### Données de l'espérance de vie pour 2016-2021 pour chaque pays {style="text-align:center; color:#955BCC"}
 

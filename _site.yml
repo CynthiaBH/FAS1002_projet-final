@@ -14,10 +14,10 @@ navbar:
           href: https://rstudio.github.io/distill/basics.html
         - text: "DT Basics"
           href: https://rstudio.github.io/DT/
+        - text: "Rstudio4edu"
+          href: https://rstudio4edu.github.io/rstudio4edu-book/
 
   right:
-    - text: "Introduction"
-      href: 1-intro.html
     - text: "Importation"
       href: 2-import.html
     - text: "Transformation"

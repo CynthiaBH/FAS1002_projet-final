@@ -1,6 +1,13 @@
 ---
 title: 'Rapport final pour le cours FAS 1002'
 description: Étude des données de vaccinations de la Covid-19
+author:
+  - first_name: "Cynthia"
+    last_name: "Bello"
+    url: https://github.com/CynthiaBH
+    affiliation:  Université de Montréal
+    affiliation_url: https://www.umontreal.ca/etudes/#domaines-d-etudes
+citation_url: https://CynthiaBH.github.io/FAS1002_projet-final
 site: distill::distill_website
 toc: no
 ---
@@ -11,11 +18,6 @@ library(tidyverse)
 library(readxl)
 ```
 
-Vous pouvez faire le résumé de votre projet directement sur cette page et utiliser le document [1-intro](1-intro.html) pour décrire votre projet.
-
-Il s'agit d'un fichier R Markdown traditionnel. ^[Avec des petits trucs sympa comme des notes de bas de page]
-
-## Inclure des graphiques
 
 
 <aside>
@@ -24,5 +26,5 @@ Il s'agit d'un fichier R Markdown traditionnel. ^[Avec des petits trucs sympa co
 
 
 ## Remerciements {.appendix}
-J'aimerai rem
+J'aimerai remercier notre enseigant Samuel Guay, pour l'excellente session pour le cours FAS1002. J'ai non seulement énormément appris au sujet de R, de la programmation et des bonnes habitudes à avoir lorsqu'on code, mais c'était différent comme enseignement universitaire et flexible ce qui était très apprécié. Merci! :)
 

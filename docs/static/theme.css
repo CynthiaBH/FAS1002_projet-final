@@ -60,13 +60,6 @@ d-appendix {
 ;
 }
 
-.distill-site-footer {
-  --text-color:       rgba(255, 255, 255, 1);
-  --text-size:        1.1rem;
-  --hover-color:      #222;
-  --bkgd-color:       #EEE;
-}
-
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 html, body, p {
@@ -78,14 +71,7 @@ html, body, p {
   font-style: normal;
 }
 
-.distill-site-footer {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-}
-
-
-.distill-site-header .logo img{
-  max-height: 40px; /* Makes logo bigger, default was 20px */
-  margin-bottom: -30%; /* To vertically center it */
+img.one {
+  height: 50%;
+  width: 120%;
 }

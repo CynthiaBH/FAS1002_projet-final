@@ -1,17 +1,17 @@
 ---
 title: "À propos"
 description: |
-    Lisez ci-dessous pour en apprendre plus sur la personne derrière ce rapport.
+    Un peu plus sur moi...
 toc: false
 ---
 
 
 ## Bio 
-
+Je suis étudiante au Baccalauréat en Anthropologie à l'Université de Montréal, je veux devenir archéologue. J'ai un passé en informatique du c'où mon intérêt pour ce cours **FAS 1002** de `Programmation en R`. Connaître plusieurs langages de programmation surtout R pour les mathématiques et les statistiques seront un avantage dans ma future carrière d'archéologue, qui emploi de plus en plus les systèmes GIS ainsi que les bases de données pour cataloguer les artéfacts découverts. 
 
 
 <aside>
-![](static/images/FAS1002.png){width=80%}
+![](static/images/archaeologist.jpg){width=50%}
 </aside>
 
 

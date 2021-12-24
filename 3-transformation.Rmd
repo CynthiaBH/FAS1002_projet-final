@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-> Dans cette section, nous allons manipuler nos différents jeux de données présentés précédemment dans le but de rendre plus efficace l'analyse ou de mieux visualiser le tout.
+> Dans cette section, nous allons manipuler nos différents jeux de données présentés précédemment dans le but de rendre plus efficace l'analyse et/ou de mieux visualiser le tout.
 
 # Variable date de l'ensemble de données de vaccinations
 
@@ -35,6 +35,7 @@ covid_data %<>%  mutate(date = format(date, format = "%Y-%m"))
 covid_data %<>% mutate_if(is.numeric, ~replace(., is.na(.), 0)) 
 covid_data %<>% group_by(country, date) %>% summarise(across(where(is.numeric),sum))
 show_tb_paged(covid_data)
+
 
 ```
 
@@ -78,5 +79,25 @@ lifeexp_data %<>% relocate(Continent, .after = country)
 
 show_tb_dt(lifeexp_data)
 rm(continent_data)
+
+```
+
+# Validation de la variable `total_vaccinations_per_hundred`
+
+La table `covid_data` contient une variable `total_vaccinations_per_hundred`, mais nous voulons ici valider les résultats obtenus avec les données de population mondiale de 2021 \[@gapminder2021\] .
+
+```{r}
+#On va garder que les données de populations pour 2021
+pop_data %<>% filter(time == 2021)  %>% rename(country = name) %>% select(2,4) 
+
+pop_data$Population <- format_num(pop_data$Population)
+
+covid_data_test <-  left_join(covid_data, pop_data, by = c("country" = "country"))
+covid_data_test$Population <- as.factor(covid_data_test$Population)
+covid_data_test %<>% select(1:4, 8, 14)
+
+
+# covid_data_test %<>% filter(!(is.na(total_vaccinations_per_hundred))) %>% mutate(verified_total_vax_per_hundred = ((total_vaccinations_per_hundred /Population)*100))
+
 
 ```

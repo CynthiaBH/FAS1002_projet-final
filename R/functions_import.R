@@ -6,6 +6,7 @@ library(magrittr)
 url_covid <- "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv"
 url_pib <- "https://docs.google.com/spreadsheets/d/1h3z8u0ykcUum8P9FV8EHF9fszDYr7iPDZQ-fgE3ecls/export?format=xlsx"
 url_lifeexp <- "https://docs.google.com/spreadsheets/d/11mulzUH3_cueq-V9D5KIlo9oHE9YYZrUSeVyCin7_rM/export?format=xlsx"
+url_pop <- "https://docs.google.com/spreadsheets/d/14_suWY8fCPEXV0MH7ZQMZ-KndzMVsSsA5HdR-7WqAC0/export?format=xlsx"
 
 folder <- "data/raw/"
 sheetcountry <- "data-for-countries-etc-by-year"
@@ -72,8 +73,15 @@ if (expired) {
 }
 lifeexp_data <- import_data_xl(file_lifeexp, sheetcountry) #par pays
 
+# Importation et téléchargement des Données de population mondiale
+file_pop <- list.files(folder, pattern = "population")
+if (length(file_pop) == 0) {
+    download_data(folder, "pop_data_", url_pop,".xlsx")
+}
+pop_data <- import_data_xl(file_pop, sheetcountry) #par pays
+
 #Nettoyage environnement, effacer variables non-utiles pour la suite
-rm(expired, file_covid, file_lifeexp, file_pib, sheetcountry)
+rm(expired, file_covid, file_lifeexp, file_pib,file_pop, sheetcountry)
 
 
 

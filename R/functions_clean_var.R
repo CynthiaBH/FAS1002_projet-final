@@ -15,5 +15,3 @@ lifeexp_data %<>% rename(country = name,year = time,life_expectancy = `Life expe
 lifeexp_data$country <- as.factor(lifeexp_data$country)
 
 
-
-

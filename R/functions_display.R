@@ -43,5 +43,13 @@ show_tb_dt_buttons<- function(dt){
     )
 }
 
+# Formatter une colonne pour avoir un espace entre les milliers
+format_num <- function(dt) {
+    formatC(dt, format="f", big.mark = " ", digits=0)
+}
 
+# Formatter les colonnes numériques pour avoir un espace entre les milliers
+format_num <- function(dt) {
+    formatC(dt, format="f", big.mark = " ", digits=0)
+}
 
