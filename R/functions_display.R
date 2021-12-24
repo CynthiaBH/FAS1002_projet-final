@@ -14,19 +14,33 @@ show_head_kbl <- function(dt){
 
 # Fonction d'affichage des tableaux avec paged_table
 show_tb_paged <- function(dt){
-    dt %>% paged_table(options = list(rows.print = 20, cols.print = 7))
+    dt %>% paged_table(options = list(rows.print = 15, cols.print = 7))
 }
 
-show_tb_dt<- function(dt, title){
+show_tb_dt<- function(dt){
     datatable(dt,
-              caption = htmltools::tags$caption(title, style="color:darkgrey"), 
-              extensions = c('FixedColumns',"FixedHeader"),
+              extensions = c('FixedColumns',"FixedHeader", "Scroller"),
               rownames = FALSE,
               options = list(scrollX = TRUE, 
                                  paging=TRUE,
-                                 fixedHeader=TRUE),
+                                 fixedHeader=TRUE
+                                ),
               class = 'cell-border stripe'
               )
+}
+
+show_tb_dt_buttons<- function(dt){
+    datatable(dt,
+              extensions = c('FixedColumns',"FixedHeader", "Scroller", "Buttons"),
+              rownames = FALSE,
+              options = list(scrollX = TRUE, 
+                             paging=TRUE,
+                             fixedHeader=TRUE,
+                             dom = 'Bfrtip',
+                             buttons = c('copy', 'csv', 'excel', 'pdf', 'print')
+              ),
+              class = 'cell-border stripe'
+    )
 }
 
 

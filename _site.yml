@@ -1,4 +1,5 @@
 name: "FAS1002_projet-final"
+icon: fa fa-line-chart
 title: "Projet d'étude: Covid-19"
 repository_url: https://cynthiabh.github.io/fas1002_projet-final/
 description: Projet final pour le cours FAS1002! 
@@ -7,8 +8,6 @@ theme: static/theme.css
 navbar:
   source_url: true
   left:
-    - icon: fa fa-line-chart
-      href: index.html
     - text: "Guides Pratiques"
       menu:
         - text: "Distill Basics"
@@ -25,7 +24,7 @@ navbar:
       href: 3-transformation.html
     - text: "Analyse"
       href: 4-analyse.html
-    - icon: fab fa-envelope
+    - icon: fa fa-id-card
       text: "Contact"
       href: contact.html
     - icon: fab fa-github

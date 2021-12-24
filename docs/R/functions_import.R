@@ -9,7 +9,6 @@ url_lifeexp <- "https://docs.google.com/spreadsheets/d/11mulzUH3_cueq-V9D5KIlo9o
 
 folder <- "data/raw/"
 sheetcountry <- "data-for-countries-etc-by-year"
-sheetregion <- "data-for-regions-by-year"
 
 check_filedate <- function(limite, pat){
     filename <- list.files(folder,pattern=pat)
@@ -59,7 +58,6 @@ if (expired) {
     file_pib <- list.files(folder, pattern = "pib")
 }
 pib_data <- import_data_xl(file_pib, sheetcountry) #par pays
-pib_data_region <- import_data_xl(file_pib, sheetregion) #par continent
 
 # Importation et téléchargement des Données Espérance de vie
 file_lifeexp <- list.files(folder, pattern = "lifeexp")
@@ -73,10 +71,9 @@ if (expired) {
     file_lifeexp <- list.files(folder, pattern = "lifeexp")
 }
 lifeexp_data <- import_data_xl(file_lifeexp, sheetcountry) #par pays
-lifeexp_data_region <- import_data_xl(file_lifeexp, sheetregion) #par continent
 
 #Nettoyage environnement, effacer variables non-utiles pour la suite
-rm(expired, file_covid, file_lifeexp, file_pib, sheetcountry, sheetregion)
+rm(expired, file_covid, file_lifeexp, file_pib, sheetcountry)
 
 
 

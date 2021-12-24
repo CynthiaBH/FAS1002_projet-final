@@ -17,7 +17,7 @@ output: distill::distill_article
 ```{r setup, include=FALSE}
 Packages <- c("tidyverse", "magrittr", "lubridate")
 lapply(Packages, library, character.only = TRUE)
-source("R/functions_display.R", local = knitr::knit_global())
+source("R/functions_display.R")
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 La colonne `date` des données de vaccinations de la Covid-19 est divisée en jours depuis Décembre 2020, cela résulte en plus de 300 observations pour chaque pays. Pour une meilleure visualisation des données, on a décidé de regrouper cette variable par mois et année en utilisant *format* pour chaque pays. On passe alors de plus de 60,000 observations à 2500.
 
-#### Données de vaccinations de la Covid-19 - par mois/année
+#### Données de la vaccinations de la Covid-19 - par mois et année {style="text-align: center;color:#955BCC"}
 
 ```{r}
 covid_data %<>%  mutate(date = format(date, format = "%Y-%m"))
@@ -40,4 +40,43 @@ show_tb_paged(covid_data)
 
 # Nouvelle variable `continents` pour les 3 ensembles de données
 
-# 
+On aimerait également être capable de regrouper les différents pays selon leur continent respectif, alors nous allons ajouter une variable `continents` aux jeux de données `covid_data`. Pour ce faire, nous allons utilisé la liste fournie par *Our world in data* [@our_world_in_data_continents_2015], puis le *package* [Dplyr](https://dplyr.tidyverse.org) [@agramma] pour ajouter une variable pour les continents et l'associée au pays correspondant.
+
+#### Données de vaccinations de la Covid-19 - avec variable Continent {style="text-align: center;color:#955BCC"}
+
+```{r}
+#Créer une table avec la liste des continents et pays
+continent_data <- as.tibble(read.csv("data/processed/continents-according-to-our-world-in-data.csv"))
+continent_data %<>% select(1,4) %>% rename(country = Entity)
+
+# Joindre les covid_data et continents par la variable "country"
+covid_data %<>%  left_join(continent_data, covid_data, by = c("country" = "country")) 
+covid_data %<>% relocate(13, .after = country) 
+
+show_tb_dt(covid_data)
+```
+
+#### Données du PIB- avec variable Continent {style="text-align: center;color:#955BCC"}
+
+```{r}
+
+# Joindre les pib_data et continents par la variable "country"
+pib_data %<>%  left_join(continent_data, pib_data, by = c("country" = "country")) 
+pib_data %<>% relocate(Continent, .after = country) 
+
+show_tb_dt(pib_data)
+
+```
+
+#### Données de l'espérance de vie - avec variable Continent {style="text-align: center;color:#955BCC"}
+
+```{r}
+
+# Joindre les lifeexp_data et continents par la variable "country"
+lifeexp_data %<>%  left_join(continent_data, lifeexp_data, by = c("country" = "country")) 
+lifeexp_data %<>% relocate(Continent, .after = country) 
+
+show_tb_dt(lifeexp_data)
+rm(continent_data)
+
+```
